@@ -1,0 +1,412 @@
+
+body, html {
+  margin: 0;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#mangler_points {
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    background-image: url("produktion/game_over.svg");
+    background-size: cover;
+    z-index: 20;
+
+}
+
+#start{
+
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-image: url("produktion/start_page.svg");
+    background-size: cover;
+    margin: 0;
+    z-index: 20;
+
+}
+
+#startGame {
+    position: absolute;
+    width: 20.5%;
+    height: 16.5%;
+    top: 80%;
+    left: 37%;
+    background: transparent;
+    border: none;
+}
+
+#game_over{
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 7.5%;
+    background-image: url("produktion/game_over.svg");
+    background-size: cover;
+    z-index: 20; 
+}
+
+#play_again {
+  position: absolute;
+  border: none;
+  text-decoration: none;
+  font-size: 60px;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  background: none;
+}
+
+#play_again2 {
+  position: absolute;
+  border: none;
+  text-decoration: none;
+  font-size: 60px;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  background: none;
+}
+
+#play_again3 {
+  position: absolute;
+  border: none;
+  text-decoration: none;
+  font-size: 60px;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  background: none;
+}
+
+
+#tillykke {
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    background-image: url("produktion/tillykke.svg");
+    background-size: cover;
+    top: 0;
+    left: 7.5%;
+    z-index: 20;
+}
+
+#p_tillykke {
+  position: absolute;
+  top: 35%;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  font-size: 35px;
+}
+
+#p_game_over {
+  position: absolute;
+  top: 35%;
+  left: 52%;
+  transform: translate(-50%, 50%);
+  font-size: 35px;
+}
+
+#p_mangler_points {
+  position: absolute;
+  top: 35%;
+  left: 54%;
+  transform: translate(-50%, 50%);
+  font-size: 35px;
+}
+
+#game_background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("produktion/game_background.svg");
+    background-size: cover;
+
+}
+
+#game_elements{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+#game_ui{
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+#life_board{
+    top: 70px;
+  
+    z-index: 5;
+}
+#score_board {
+  font-size: 28px;
+}
+
+#time_board {
+  font-size: 28px;
+}
+
+#dog_container {
+    position:absolute;
+    aspect-ratio: 16/12;
+    width: 8.5%;
+}
+
+#sheep_container1 {
+    position:absolute;
+    aspect-ratio: 15/12;
+    width: 8.5%;
+
+}
+
+#sheep_container2 {
+  position:absolute;
+  aspect-ratio: 15/12;
+  width: 8.5%;
+
+}
+
+#sheep_container3 {
+  position:absolute;
+  aspect-ratio: 15/12;
+  width: 8.5%;
+
+}
+
+#dog_sprite{
+    
+    background: url("produktion/normal_dog.svg");
+    transform: scale(-1,1);
+}
+
+#sheep_sprite1{
+    background: url("produktion/normal_sheep.svg");
+    transform: scale(-1,1);
+}
+
+#sheep_sprite2{
+  background: url("produktion/normal_sheep.svg");
+  transform: scale(-1,1);
+}
+
+#sheep_sprite3{
+  background: url("produktion/normal_sheep.svg");
+  transform: scale(-1,1);
+}
+
+.pos1{
+  top: 20vw;
+  left: -10vw;
+}
+
+.pos2{
+    top: 45vw;
+    left: -10vw;
+}
+
+.pos3{
+
+    top: 40vw;
+    left: -10vw;
+
+}
+
+.pos4{
+    top: 30vw;
+    left: -10vw;
+}
+
+.sprite{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.liv{
+    width: 60px;
+    top: 20px;
+    right: 40px;
+}
+
+.sletmig{
+    animation-delay: 1s;
+}
+
+.frys{
+    animation-play-state: paused;
+}
+
+.run {
+    animation-name: run_kf;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+.run2 {
+    animation-name: run2_kf;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+  }
+
+.run3 {
+    animation-name: run3_kf;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes run_kf {
+    0% {
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      transform: translateX(1900%);
+    }
+  }
+
+  @keyframes run2_kf {
+      0% {
+        transform: translateX(-200%);
+      }
+    
+      100% {
+        transform: translateX(1900%);
+      }
+  }
+
+  @keyframes run3_kf {
+    0% {
+      transform: translateX(-200%);
+    }
+  
+    100% {
+      transform: translateX(1900%);
+    }
+  }
+
+  .ikke-synlig{
+    display: none;
+  }
+
+  .forsvind_sheep1 {
+    animation-name: forsvind_sheep1_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind_sheep1_kf {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+
+  .forsvind_sheep2 {
+    animation-name: forsvind_sheep2_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind_sheep2_kf {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+
+  .forsvind_sheep3 {
+    animation-name: forsvind_sheep3_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind_sheep3_kf {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+  
+  .forsvind_dog {
+    animation-name: forsvind_dog_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind_dog_kf {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+
+  

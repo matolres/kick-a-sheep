@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 129">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd6a1;
+      }
+
+      .cls-2 {
+        fill: #edeceb;
+      }
+    </style>
+  </defs>
+  <rect x="94.46" y="103.71" width="32.34" height="7.14" rx="3.44" ry="3.44" transform="translate(3.35 217.91) rotate(-90)"/>
+  <rect x="39.45" y="103.71" width="32.34" height="7.14" rx="3.44" ry="3.44" transform="translate(-51.66 162.9) rotate(-90)"/>
+  <ellipse class="cls-2" cx="87.39" cy="54.13" rx="56.93" ry="50.65"/>
+  <ellipse class="cls-1" cx="36.54" cy="52.2" rx="21.43" ry="26.13"/>
+  <path d="M25.45,37.37l-17.17,10c-1.68,.98-3.84,.39-4.81-1.3h0c-.97-1.69-.39-3.87,1.29-4.85l17.17-10c1.68-.98,3.84-.39,4.81,1.3h0c.97,1.69,.39,3.87-1.29,4.85Z"/>
+  <path d="M64.79,47.37l-17.17-10c-1.68-.98-2.26-3.16-1.29-4.85h0c.97-1.69,3.13-2.27,4.81-1.3l17.17,10c1.68,.98,2.26,3.16,1.29,4.85h0c-.97,1.69-3.13,2.27-4.81,1.3Z"/>
+  <ellipse class="cls-2" cx="36.22" cy="31.87" rx="15.35" ry="9.68"/>
+  <ellipse cx="30.46" cy="50.91" rx="2.56" ry="3.55"/>
+  <ellipse cx="41.33" cy="50.91" rx="2.56" ry="3.55"/>
+  <rect x="48.46" y="103.75" width="32.34" height="7.14" rx="3.44" ry="3.44" transform="translate(-42.69 171.95) rotate(-90)"/>
+  <rect x="104.06" y="103.71" width="32.34" height="7.14" rx="3.44" ry="3.44" transform="translate(12.95 227.51) rotate(-90)"/>
+  <ellipse class="cls-2" cx="145.6" cy="51.23" rx="6.4" ry="7.1"/>
+</svg>

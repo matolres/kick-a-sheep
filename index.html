@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>kick a sheep</title>
+</head>
+<body>
+    <div id="screen">
+        <div id="game">
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div class="">
+                   
+                    <div class=" pos4 sletmig" id="dog_container">
+                        <div class="sprite"  id="dog_sprite">
+
+                        </div>
+                    </div>
+                    <div class=" pos1" id="sheep_container1">
+                        <div class="sprite" id="sheep_sprite1">
+                        </div>
+                    </div>
+                    <div class=" pos2" id="sheep_container2">
+                        <div class="sprite" id="sheep_sprite2">
+                        </div>
+                    </div>
+                    <div class=" pos3" id="sheep_container3">
+                        <div class="sprite" id="sheep_sprite3">
+                        </div>
+                    </div>
+                    
+
+                    
+                    
+                </div>
+            </div>
+            <div id="game_foreground">
+
+            </div>
+            <div id="game_ui">
+                <div id="score_board">
+                   <p>dine points: <span id="score"></span></p> 
+                </div>
+                <div id="life_board">
+                    <img src="produktion/life_ui.svg" class="liv" id="liv1" alt="">
+                    <img src="produktion/life_ui.svg" class="liv" id="liv2">
+                    <img src="produktion/life_ui.svg" class="liv" id="liv3">
+                </div>
+                <div id="time_board">
+                    <p>Din tid <span id="timer"></span></p>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="start">
+                    <button id="startGame"></button>
+        </div>
+        <div id="game_over">
+            <p id="p_game_over"> Oh nej ! du mistede 3 liv </p>
+            <button id="play_again"> play again</button>  
+        </div>
+
+        <div id="tillykke">
+            <p id="p_tillykke"></p>
+            <button id="play_again2"> play again</button>
+        </div>
+
+        <div id="mangler_points">
+            <p id="p_mangler_points"></p>
+            <button id="play_again3"> play again</button>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
